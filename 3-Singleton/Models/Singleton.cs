@@ -12,6 +12,7 @@ namespace _3_Singleton.Models
 
         public string Date { get; private set; }
         public string Name { get; private set; }
+        public static string Text { get; set; } = "text";
 
         private Singleton()
         {
