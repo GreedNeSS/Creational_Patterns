@@ -16,14 +16,14 @@ namespace _3_Singleton.Models
 
         private Singleton()
         {
-            Console.WriteLine($"Singleton ctor {DateTime.Now.ToLongTimeString()}");
-            Date = DateTime.Now.ToLongTimeString();
+            Console.WriteLine($"Singleton ctor {DateTime.Now.ToString("HH:mm:ss:ffff")}");
+            Date = DateTime.Now.ToString("HH:mm:ss:ffff");
             Name = Guid.NewGuid().ToString();
         }
 
         public static Singleton GetInstance()
         {
-            Console.WriteLine($"Singleton GetInstance {DateTime.Now.ToLongTimeString()}");
+            Console.WriteLine($"Singleton GetInstance {DateTime.Now.ToString("HH:mm:ss:ffff")}");
             return lazy.Value;
         }
     }
