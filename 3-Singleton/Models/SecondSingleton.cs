@@ -14,7 +14,7 @@ namespace _3_Singleton.Models
 
         private SecondSingleton()
         {
-            Console.WriteLine($"Singleton ctor ${DateTime.Now.ToLongTimeString()}");
+            Console.WriteLine($"Singleton ctor {DateTime.Now.ToLongTimeString()}");
             Date = DateTime.Now.ToLongTimeString();
             Name = Guid.NewGuid().ToString();
         }
@@ -27,7 +27,7 @@ namespace _3_Singleton.Models
 
         public static SecondSingleton GetInstance()
         {
-            Console.WriteLine($"Singleton GetInstance ${DateTime.Now.ToLongTimeString()}");
+            Console.WriteLine($"Singleton GetInstance {DateTime.Now.ToLongTimeString()}");
             return Nested.instance;
         }
     }
