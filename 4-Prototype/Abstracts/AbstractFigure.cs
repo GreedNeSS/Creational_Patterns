@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace _4_Prototype.Abstracts
 {
+    [Serializable]
     public abstract class AbstractFigure : IFigure
     {
         public IFigure Clone()
