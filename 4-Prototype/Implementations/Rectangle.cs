@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace _4_Prototype.Implementations
 {
+    [Serializable]
     public class Rectangle : AbstractFigure
     {
         public int Width { get; set; }
