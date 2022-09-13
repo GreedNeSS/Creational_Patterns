@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace _4_Prototype.Models
 {
+    [Serializable]
     public class Point
     {
         public int X { get; set; }
