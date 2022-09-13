@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace _4_Prototype.Implementations
 {
+    [Serializable]
     public class Circle : AbstractFigure
     {
         public int Radius { get; set; }
